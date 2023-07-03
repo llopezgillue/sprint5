@@ -1,0 +1,82 @@
+body {
+    background-color: #F7F7FF;
+    font-family: 'Lato', sans-serif;
+    color: #696D7D;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1,
+h3,
+#nombre {
+    text-align: center;
+    font-family: 'Helvetica Neue', sans-serif;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #3C415C;
+    text-shadow: 2px 2px 4px #B8C5D6;
+    font-weight: bold;
+    line-height: 1.2em;
+}
+
+#nombre {
+    color: #3C415C;
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h3 {
+    color: #3C415C;
+    font-size: 1.6em;
+    font-weight: lighter;
+    margin-top: 30px;
+}
+
+button {
+    color: yellow;
+    background-color: #3C415C;
+    border: none;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #D0E1F9;
+    color: #3C415C;
+}
+
+#respuesta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    color: black;
+    font-size: 2em;
+    padding: 20px;
+    border-radius: 4px;
+    background: url(./images/blob.svg) no-repeat center center;
+    background-size: 70%;
+
+}
+
+.weatherInfo {
+    display: flex;
+    align-items: center;
+}
+
+#weatherIcon {
+    margin-right: 10px; /* Ajusta el margen entre el icono y el texto */
+}
+
