@@ -78,22 +78,22 @@ function fecha_valoracion() {
     return reportJokes;
 }
 // Función para pedir a la API el tiempo actual asi como la geolocalizacion
- 
+
 const API_URL_WEATHER = "http://api.weatherapi.com/v1";
 const weatherIcon = document.getElementById("weatherIcon");
 const weatherInfo = document.getElementById("weatherInfo");
 const API_KEY = '1c9c6cb101e7e4d9930b3d50a680e21a';
 function getWeather() {
-    navigator.geolocation.getCurrentPosition((success) => {  
-        let { latitude, longitude } = success.coords; 
-        fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=${API_KEY}`) 
-            .then(response => response.json())  
-            .then(data => { 
-            let { temp } = data.main;  
-            weatherInfo.innerHTML = `${Math.trunc(temp)}ºC`;  
-            let icon = data.weather[0].icon; 
-            weatherIcon.src =`http://openweathermap.org/img/wn/${icon}@2x.png` ; 
-        });
+    navigator.geolocation.getCurrentPosition((success) => {
+        let { latitude, longitude } = success.coords;
+        fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=${API_KEY}`)
+            .then(response => response.json())
+            .then(data => {
+                let { temp } = data.main;
+                weatherInfo.innerHTML = `${Math.trunc(temp)}ºC`;
+                let icon = data.weather[0].icon;
+                weatherIcon.src = `http://openweathermap.org/img/wn/${icon}@2x.png`;
+            });
     });
 }
 getWeather();

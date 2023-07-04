@@ -18,19 +18,20 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body>
+<body style="background-image: url(./images/fondos-de-pantalla-hd-para-pc-2.jpg);">
 
     <header>
 
-        <img  id="weatherIcon" src="" >
-
-        <p id="weatherInfo"></p>
+        <span class="navbar-text fw-bold d-flex align-items-center">
+            <img src="" id="weatherIcon" class="me-3 border-end pe-3">
+            <p id="weatherInfo" class="fs-4 text-center text-warning"></p>
+          </span>
 
     </header>
 
 
     <main class="container-fluid my-3 col-6 align-center text-center">
-        <h2>Preparat per riure?</h2>
+        <h2 style="color: black;">Preparat per riure?</h2>
         <div id="respuesta">Pulsa en el botó següent perque apareguin nous acudits</div>
         <div id="scores_button"></div>
         <button id="boton" class="mt-3" onclick=Change_joke()>Següent</button>
